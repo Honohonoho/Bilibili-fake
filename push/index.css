@@ -1,27 +1,126 @@
-.main-page > .recommend {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,ol,li {
+    list-style: none;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+body {
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.main-page{
+    width: 980px;
+    height: 1900px;
+    margin:0 auto;
+    border: 1px solid #333;
+}
+.main-page > .push{
+    margin-bottom: 30px;
+}
+.main-page > .push > .push-title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
-.main-page > .recommend > .carousel {
-    border: 1px solid red;
-    width: 440px;
-    height: 220px;
+.main-page > .push > .push-title >.content {
+    width: 720px;
+    padding-bottom: 15px;
+    height:45px;
 }
-.main-page > .recommend > .rec-ct {
-    border: 1px solid #ffafc9;
+.main-page > .push > .push-title >.content >.name{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.main-page > .push > .push-title >.content >.hot{
+    color: #6d757a;
+}
+.main-page > .push > .push-title >.content >.icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: -10px;
+    vertical-align: middle;
+    background-position: -141px -78px;
+    background-image: url(./icons3.png);
+}
+.main-page > .push > .push-title >.info{
+    width: 260px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background: #e5e9ef;
+    color: #6d757a;
+}
+.main-page > .push >.push-title >.info > a:nth-child(1) > span{
+    color: #6d757a;
+    padding-right: 15px;
+    border-right: 1px solid #b8c0cc;
+}
+.main-page > .push >.push-title >.info > a:nth-child(2) > span{
+    color: #6d757a;
+    padding-left: 15px;
+}
+.main-page > .push > .push-ct {
     display: flex;
-    width: 520px;
-    height: 220px;
-    flex-wrap: wrap;
-    flex-direction: row;
+    height: 168px;
     justify-content: space-between;
-    align-content: space-between;
 }
-.main-page > .recommend > .rec-ct > div {
-    border: 1px solid black;
-    background: #aaa;
+.main-page > .push > .push-ct > .item{
+    width: 160px;
+}
+.main-page > .push > .push-ct > .item-ad {
+    width: 260px;
+}
+.main-page > .push > .push-ct > .item> a > .pic{
+    position: relative;
     width: 160px;
     height: 100px;
-
+    border-radius: 4px;
 }
+.main-page > .push > .push-ct > .item> a > .pic>img{
+    border-radius: 4px;
+}
+.main-page > .push > .push-ct > .item> a > .pic >.mask{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+}
+.main-page > .push > .push-ct > .item> a > .pic >.mask>.time-mark{
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    padding: 0 5px 1px 0;
+    height: 12px;
+    line-height: 12px;
+    color: #fff;
+    transition: all .3s;
+}
+.main-page > .push > .push-ct > .item> a >p {
+    padding-top: 8px;
+    height: 50px;
+    line-height: 20px;
+    color: #222;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
