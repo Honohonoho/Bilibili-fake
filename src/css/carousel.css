@@ -1,0 +1,6 @@
+/*轮播*/
+.main-page > .recommend > .carousel {
+    border: 1px solid red;
+    width: 440px;
+    height: 220px;
+}

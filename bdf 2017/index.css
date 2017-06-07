@@ -1,0 +1,27 @@
+.main-page > .recommend {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.main-page > .recommend > .carousel {
+    border: 1px solid red;
+    width: 440px;
+    height: 220px;
+}
+.main-page > .recommend > .rec-ct {
+    border: 1px solid #ffafc9;
+    display: flex;
+    width: 520px;
+    height: 220px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.main-page > .recommend > .rec-ct > div {
+    border: 1px solid black;
+    background: #aaa;
+    width: 160px;
+    height: 100px;
+
+}

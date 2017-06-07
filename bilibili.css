@@ -16,7 +16,9 @@ ul,ol,li {
 }
 body {
     font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size: 12px;
 }
+/*顶部*/
 .header{
     border: 1px solid red;
     position: relative;
@@ -137,6 +139,7 @@ nav-ct ul > li >.top-link {
     border: none;
     background: url(./img/icons.png) -653px -720px;
 }
+/*分区导航*/
 .nav-guide {
     border: 1px solid orange;
 }
@@ -229,12 +232,79 @@ nav-ct ul > li >.top-link {
     height: 50px;
     padding: 6px 0;
 }
+/*页面主体*/
 .main-page{
     width: 980px;
-    height: 900px;
+    height: 1900px;
     margin:0 auto;
     border: 1px solid #333;
 }
+
+/*每日推荐板块*/
+.main-page > .recommend {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.main-page > .recommend > .carousel {
+    border: 1px solid red;
+    width: 440px;
+    height: 220px;
+}
+.main-page > .recommend > .rec-ct {
+    border: 1px solid #ffafc9;
+    display: flex;
+    width: 520px;
+    height: 220px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.main-page > .recommend > .rec-ct > div {
+    border: 1px solid black;
+    background: #aaa;
+    width: 160px;
+    height: 100px;
+
+}
+/*推广板块*/
+.main-page > .push {
+    margin-bottom: 50px;
+}
+.main-page > .push > .push-title {
+    display: flex;
+    border: 1px solid blue;
+    justify-content: space-between;
+
+}
+.main-page > .push > .push-title > .content {
+    width: 700px;
+    height: 24px;
+    margin: 4px 0 6px 0;
+}
+.main-page > .push > .push-title > .info {
+    width: 260px;
+}
+.main-page > .push > .push-ct {
+    display: flex;
+    border: 1px solid #333;
+    justify-content: space-between;
+}
+.main-page > .push > .push-ct > .item {
+    width: 160px;
+    height: 150px;
+    background: #aaa;
+}
+.main-page > .push > .push-ct > .item >a {
+    
+}
+.main-page > .push > .push-ct > .item-ad {
+    width: 260px;
+    height: 150px;
+}
+/*直播板块*/
+
 .side-nav{
 
 }
