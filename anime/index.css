@@ -1,27 +1,20 @@
-.main-page > .recommend {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.main-page > .recommend > .carousel {
-    border: 1px solid red;
-    width: 440px;
-    height: 220px;
+a {
+    text-decoration: none;
 }
-.main-page > .recommend > .rec-ct {
-    border: 1px solid #ffafc9;
-    display: flex;
-    width: 520px;
-    height: 220px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
+ul,ol,li {
+    list-style: none;
 }
-.main-page > .recommend > .rec-ct > div {
-    border: 1px solid black;
-    background: #aaa;
-    width: 160px;
-    height: 100px;
-
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+body {
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size: 12px;
 }
