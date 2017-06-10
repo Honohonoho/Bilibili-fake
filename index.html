@@ -1,345 +1,914 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
-  <link rel="shortcut icon" href="./img//favicon.ico">
-  <link rel="stylesheet" href="./bilibili.css">
-  <link rel="stylesheet/less" type="text/css" href="bilibili.less" />
-  <script src="./src/lib/less.min.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+    <link rel="shortcut icon" href="./src/images/favicon.ico">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/recommend.css">
+    <link rel="stylesheet" href="./src/css/push.css">
+    <link rel="stylesheet" href="./src/css/live.css">
+    <link rel="stylesheet" href="./src/css/anime.css">
+    <link rel="stylesheet" href="./src/css/bangumi.css">
 </head>
 <body>
-  <div class="header">
+<div class="header">
     <div class="nav-top">
-      <div class="nav-ct clearfix">
-        <div class="menu-nav">
-          <ul class="clearfix">
-            <li>
-              <a class="top-link" href="#">主站</a>
-            </li>
-            <li>
-              <a class="top-link" href="#">画友</a>
-            </li>
-            <li>
-              <a class="top-link" href="#">游戏中心</a>
-            </li>
-            <li>
-              <a class="top-link" href="#">直播</a>
-            </li>
-            <li>
-              <a class="top-link" href="#">周边</a>
-            </li>
-            <li>
-              <a class="top-link" href="#">移动端</a>
-              <div class="download"></div>
-            </li>
-          </ul>
+        <div class="nav-ct clearfix">
+            <div class="menu-nav">
+                <ul class="clearfix">
+                    <li>
+                    <a class="top-link" href="http://www.bilibili.com/index.html" target="_blank">主站</a>
+                    </li>
+                    <li>
+                    <a class="top-link" href="http://h.bilibili.com/" target="_blank">画友</a>
+                    </li>
+                    <li>
+                    <a class="top-link" href="http://game.bilibili.com/" target="_blank">游戏中心</a>
+                    </li>
+                    <li>
+                    <a class="top-link" href="http://live.bilibili.com/" target="_blank">直播</a>
+                    </li>
+                    <li>
+                    <a class="top-link" href="http://bmall.bilibili.com/#!/" target="_blank">周边</a>
+                    </li>
+                    <li>
+                    <a class="top-link" href="http://app.bilibili.com/" target="_blank">移动端</a>
+                    <div class="download"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-nav">
+            <ul class="clearfix">
+                <li class="avatar">
+                <a class="top-link" href="#" target="_blank">头像</a>
+                </li>
+                <li>
+                <a class="top-link" href="#" target="_blank">消息</a>
+                </li>
+                <li>
+                <a class="top-link" href="#" target="_blank">动态</a>
+                </li>
+                <li>
+                <a class="top-link" href="#" target="_blank">收藏夹</a>
+                </li>
+                <li>
+                <a class="top-link" href="#" target="_blank">历史</a>
+                </li>
+                <li>
+                <a class="top-link" href="#" target="_blank">投稿</a>
+                <ul class="sec-menu">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </li>
+            </ul>
+            </div>
         </div>
-        <div class="user-nav">
-          <ul class="clearfix">
-            <li class="avatar">
-              <a class="top-link" href="">头像</a>
-            </li>
-            <li>
-              <a class="top-link" href="">消息</a>
-            </li>
-            <li>
-              <a class="top-link" href="">动态</a>
-            </li>
-            <li>
-              <a class="top-link" href="">收藏夹</a>
-            </li>
-            <li>
-              <a class="top-link" href="">历史</a>
-            </li>
-            <li>
-              <a class="top-link" href="">投稿</a>
-              <ul class="sec-menu">
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="nav-img">
-      <div class="img-content">
-        <a href="">
-          <img src="" alt="">
-        </a> 
-        <div class="top-logo">
-          <img src="./img/top-logo.png" alt="">
+        <div class="img-content">
+            <a href="" target="_blank" target="_blank" target="_blank" target="_blank">
+                <img src="" alt="">
+            </a> 
+            <div class="top-logo">
+                <img src="./src/images/header/top-logo.png" title="哔哩哔哩 (゜-゜)つロ 干杯~-bilibili">
+            </div>
+            <div class="extra">
+                <a class="rank" href="http://www.bilibili.com/ranking" target="_blank">
+                    <span>排行榜</span>
+                </a>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="来验证一下柯南的那些逆天道具">
+                    <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="extra">
-          <a class="rank">
-            <img src="" alt="">
-            <span>排行榜</span>
-          </a>
-          <div class="search">
-            <form action="">
-              <input type="text" placeholder="来验证一下柯南的那些逆天道具">
-              <button type="submit"></button>
-            </form>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="nav-guide">
-      <div class="guide-wrapper">
-        <ul class="clearfix">
-          <li>
-            <a href="">
-              <span>首页</span>
+        <div class="guide-wrapper">
+            <ul class="clearfix">
+                <li>
+                    <a href="http://www.bilibili.com/index.html" target="_blank">
+                    <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.bilibili.com/video/douga.html" target="_blank">
+                    <span>动画</span><div class="num"><span>549</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://bangumi.bilibili.com/22/" target="_blank">
+                    <span>番剧</span><div class="num"><span>89</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://bangumi.bilibili.com/guochuang/" target="_blank">
+                    <span>国创</span><div class="num"><span>72</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/music.html" target="_blank">
+                    <span>音乐</span><div class="num"><span>999+</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/dance.html" target="_blank">
+                    <span>舞蹈</span><div class="num"><span>157</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/game.html" target="_blank">
+                    <span>游戏</span><div class="num"><span>999+</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/technology.html" target="_blank">
+                    <span>科技</span><div class="num"><span>831</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/life.html" target="_blank">
+                    <span>生活</span><div class="num"><span>999+</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/kichiku.html" target="_blank">
+                    <span>鬼畜</span><div class="num"><span>41</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/fashion.html" target="_blank">
+                    <span>时尚</span><div class="num"><span>330</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/ad-ad-1.html" target="_blank">
+                    <span>广告</span><div class="num"><span>101</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://www.bilibili.com/video/ent.html" target="_blank">
+                    <span>娱乐</span><div class="num"><span>999+</span></div>
+                    </a>
+                </li><li>
+                    <a href="http://bangumi.bilibili.com/33/" target="_blank">
+                    <span>影视</span><div class="num"><span>999+</span></div>
+                    </a>
+                </li>
+                <li class="square"><a href="http://www.bilibili.com/square" target="_blank"><span class="square-1">广场</span></a></li>
+                <li class="square"><a href="http://live.bilibili.com/" target="_blank"><span class="square-2">直播</span></a></li>
+                <li class="square"><a href="http://www.bilibili.com/blackroom/" target="_blank"><span class="square-3">小黑屋</span></a></li>
+            </ul>
+            <a href="#">
+                <div><img src="./src/images/header/guide-gif.gif" alt="当然是选择原谅她啊！" title="当然是选择原谅她啊！"></div>
             </a>
-          </li>
-          <li>
-            <a href="">
-              <span>动画</span><div class="num"><span>549</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>番剧</span><div class="num"><span>89</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>国创</span><div class="num"><span>72</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>音乐</span><div class="num"><span>999+</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>舞蹈</span><div class="num"><span>157</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>游戏</span><div class="num"><span>999+</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>科技</span><div class="num"><span>831</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>生活</span><div class="num"><span>999+</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>鬼畜</span><div class="num"><span>41</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>时尚</span><div class="num"><span>330</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>广告</span><div class="num"><span>101</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>娱乐</span><div class="num"><span>999+</span></div>
-            </a>
-          </li><li>
-            <a href="">
-              <span>影视</span><div class="num"><span>999+</span></div>
-            </a>
-          </li>
-          <li class="square"><a href=""><span class="square-1">广场</span></a></li>
-          <li class="square"><a href=""><span class="square-2">直播</span></a></li>
-          <li class="square"><a href=""><span class="square-3">小黑屋</span></a></li>
-        </ul>
-        <a href="">
-          <div><img src="./img/guide-gif.gif" alt=""></div>
-        </a>
-      </div>
+        </div>
     </div>
-  </div>
-  <div class="main-page">
+</div>
+<div class="main-page">
     <!--每日推荐-->
     <div class="recommend">
-      <div class="carousel">
-        <div><a href=""><img src="" alt="">1</a></div>
-        <div><a href=""><img src="" alt="">2</a></div>
-        <div><a href=""><img src="" alt="">3</a></div>
-        <div><a href=""><img src="" alt="">4</a></div>
-        <div><a href=""><img src="" alt="">5</a></div>
-        <div class="dot">
-          <div>点</div>
-          <div>点</div>
-          <div>点</div>
-          <div>点</div>
-          <div>点</div>
+        <div class="carousel">
+            <div class="slide">
+                <div><a href="http://www.bilibili.com/blackboard/topic/activity-Hy8Cc58zZ.html"><img src="./src/images/recommend/rec-carousel-1.webp" alt=""></a></div>
+                <div><a href="http://www.bilibili.com/blackboard/topic/activity-ByfdblNMW.html"><img src="./src/images/recommend/rec-carousel-2.webp" alt=""></a></div>
+                <div><a href="http://www.bilibili.com/blackboard/topic/activity-HJIOXj0bW.html"><img src="./src/images/recommend/rec-carousel-3.webp" alt=""></a></div>
+                <div><a href="http://www.bilibili.com/blackboard/topic/activity-SJSXoaJbZ.html"><img src="./src/images/recommend/rec-carousel-4.webp" alt=""></a></div>
+                <div><a href="http://www.bilibili.com/blackboard/topic/activity-rkTJ4w8Zb.html"><img src="./src/images/recommend/rec-carousel-5.webp" alt=""></a></div>
+            </div>
+            <ul class="dot">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
-      </div>
-      <div class="rec-ct">
-        <div><a href=""><img src="" alt="">1</a></div>
-        <div><a href=""><img src="" alt="">2</a></div>
-        <div><a href=""><img src="" alt="">3</a></div>
-        <div><a href=""><img src="" alt="">4</a></div>
-        <div><a href=""><img src="" alt="">5</a></div>
-        <div><a href=""><img src="" alt="">6</a></div>
-      </div>
+        <div class="rec-ct">
+            <div class="rec-item">
+                <a href="http://www.bilibili.com/video/av11161078/" target="_blank"><img src="./src/images/recommend/rec-1.webp" alt=""></a>
+                <div class="info-card">
+                    <p>【老番茄】高考完的那一晚，你在想些什么？</p>
+                </div>
+            </div>
+            <div class="rec-item">
+                <a href="http://www.bilibili.com/video/av11207156/" target="_blank"><img src="./src/images/recommend/rec-2.webp" alt=""></a>
+                <div class="info-card">
+                    <p>【Re:CREATORS 完整版OP（中日歌词）】【泽野弘之新曲】</p>
+                </div>
+            </div>
+            <div class="rec-item">
+                <a href="http://www.bilibili.com/video/av11037395/" target="_blank"><img src="./src/images/recommend/rec-3.webp" alt=""></a>
+                <div class="info-card">
+                    <p>【综漫/暖】愿你被这世界温柔以待</p>
+                </div>
+            </div>
+            <div class="rec-item">
+                <a href="http://www.bilibili.com/video/av11123954/" target="_blank"><img src="./src/images/recommend/rec-4.webp" alt=""></a>
+                <div class="info-card">
+                    <p>【火影忍者】无论是谁，不过一袭剪影</p>
+                </div>
+            </div>
+            <div class="rec-item">
+                <a href="http://www.bilibili.com/video/av11195584/" target="_blank"><img src="./src/images/recommend/rec-5.webp" alt=""></a>
+                <div class="info-card">
+                    <p>【末日风格】于外星吟唱的miku</p>
+                </div>
+            </div>
+            <div class="rec-item">
+                <a href="http://www.bilibili.com/video/av11177907/" target="_blank"><img src="./src/images/recommend/rec-6.webp" alt=""></a>
+                <div class="info-card">
+                    <p>【该细还得细】FGO国服鬼哭醉梦魔京罗生门/茨木童子攻略</p>
+                </div>
+            </div>
+        </div>
     </div>
     <!--推广-->
     <div class="push">
-      <div class="push-title">
-        <div class="content">
-          <span>推广</span>
-          <span>年度大片《今天女儿不在家》</span>
+        <div class="push-title">
+            <div class="content">
+                <span class="icon"></span>
+                <span class="name">推广</span>
+                <a class="hot" href="http://www.bilibili.com/blackboard/activity-BDF-S.html" target="_blank"><span class="a-hover">一起来跳舞吧，趁我们在校园相遇</span></a>
+            </div>
+            <div class="info">
+                <a href="http://www.bilibili.com/video/online.html" target="_blank"><span class="a-hover">在线人数：491185</span></a>
+                <a href="http://www.bilibili.com/newlist.html" target="_blank"><span class="a-hover">最新投稿：5518</span></a>
+            </div>
         </div>
-        <div class="info">
-          <span>在线人数：491185</span>
-          <span>最新投稿：5518</span>
+        <div class="push-ct">
+            <div class="item a-hover">
+                <a href="http://www.bilibili.com/video/av11109981/" target="_blank">
+                    <div class="pic">
+                        <img src="./src/images/push/push-1.webp" alt="">
+                        <div class="mask">
+                            <span class="time-mark">20:27</span>
+                        </div>
+                    </div>
+                    <p class="a-hover">灵吸怪介绍下篇---更多关于灵吸怪的奥秘</p>
+                </a>
+            </div>
+            <div class="item a-hover">
+                <a href="http://bangumi.bilibili.com/anime/6014" target="_blank">
+                    <div class="pic">
+                        <img src="./src/images/push/push-2.webp" alt="">
+                        <div class="mask">
+                            <span class="time-mark">03:41</span>
+                        </div>
+                    </div>
+                    <p class="a-hover">《开封奇谈-这个包公不太行》第4话更新</p>
+                </a>
+            </div>
+            <div class="item a-hover">
+                <a href="http://www.bilibili.com/video/av11014121/" target="_blank">
+                    <div class="pic">
+                        <img src="./src/images/push/push-3.webp" alt="">
+                        <div class="mask">
+                            <span class="time-mark">03:41</span>
+                        </div>
+                    </div>
+                    <p class="a-hover">没有维多利亚的秘密，只有碳纤维的秘密</p>
+                </a>
+            </div>
+            <div class="item a-hover">
+                <a href="http://www.bilibili.com/video/av9813230/" target="_blank">
+                    <div class="pic">
+                        <img src="./src/images/push/push-4.webp" alt="">
+                        <div class="mask">
+                            <span class="time-mark">03:41</span>
+                        </div>
+                    </div>
+                    <p class="a-hover">【纪录片/BBC】百万美国公主 Million Dollar American Princesses</p>
+                </a>
+            </div>
+            <div class="item item-ad">
+                <a href="http://www.bilibili.com/blackboard/activity-BkPiPki5g.html?from=search&seid=16747992538801268089" target="_blank">
+                    <div class="pic">
+                        <img src="./src/images/push/push-ad.webp" alt="">
+                    </div>
+                </a>
+            </div>
         </div>
-      </div>
-      <div class="push-ct">
-        <div class="item">
-          <a href="">
-            <img src="" alt="">
-            <span></span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="">
-            <img src="" alt="">
-            <span></span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="">
-            <img src="" alt="">
-            <span></span>
-          </a>
-        </div>
-        <div class="item">
-          <a href="">
-            <img src="" alt="">
-            <span></span>
-          </a>
-        </div>
-        <div class="item item-ad">
-          <a href="">
-            <img src="" alt="">
-            <span></span>
-          </a>
-        </div>
-      </div>
-    </div>
+    </div> 
     <!--直播-->
     <div class="live">
-      <div class="live-l">
-        <div class="title">
-          <div class="title-l">
-            <div class="title-l-t">
-              <span class="icon"></span>
-              <a href=""><h2>正在直播</h2></a>
-              <div class="rec">
+        <div class="live-left">
+            <div class="live-title">
                 <span class="icon"></span>
-                <a href="">233秒居然能做这些！</a>
-              </div>
+                <span class="name">正在直播</span>
+                <span class="num">当前共有<span>3752</span>个在线直播</span>
+                <a class="hot" href="http://vc.bilibili.com/" target="_blank">
+                    <span class="icon"></span>
+                    <span class="a-hover">233秒居然能做这些！</span>
+                </a>
+                <div class="status">
+                    <span class="icon"></span>
+                    <span class="status-info"><span class="status-num">3217</span>条新动态</span>
+                </div>
+                <a href="http://live.bilibili.com/" target="_blank" class="more">
+                    <span class="more-text">更多<span class="icon"></span></span>
+                </a>
             </div>
-            <div class="title-l-p"></div>
-          </div>
-          <div class="title-r">
-            <div class="title-r-s">
-              <a href="">
-                <span class="icon"></span>
-                <span class="str">3550</span>
-                <span class="info">条新动态</span>
-              </a>
+            <div class="live-ct">
+                <div class="item a-hover">
+                    <a href="http://live.bilibili.com/392" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/live/live-1.webp" alt="">
+                            <span class="type">唱见舞见</span>
+                            <div class="mask">
+                                <span class="mark"><span class="dot"></span>Live</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">爱唱歌的小小小小小姐姐？( ω｀)</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>sakamakiryoryo</span>
+                            <span class="audience"><span class="icon"></span>2482</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://live.bilibili.com/3742025" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/live/live-2.webp" alt="">
+                            <span class="type">手游直播</span>
+                            <div class="mask">
+                                <span class="mark"><span class="dot"></span>Live</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">二狗解说带你看懂王者荣耀</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>梦醒三生梦</span>
+                            <span class="audience"><span class="icon"></span>1.4万</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://live.bilibili.com/5297" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/live/live-3.webp" alt="">
+                            <span class="type">绘画专区</span>
+                            <div class="mask">
+                                <span class="mark"><span class="dot"></span>Live</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">画个素描~</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>小熊绅士</span>
+                            <span class="audience"><span class="icon"></span>4340</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://live.bilibili.com/545342" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/live/live-4.webp" alt="">
+                            <span class="type">生活娱乐</span>
+                            <div class="mask">
+                                <span class="mark"><span class="dot"></span>Live</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">小米Max 2超耐久直播第二季-第17天</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>小米公司</span>
+                            <span class="audience"><span class="icon"></span>9.4万</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://live.bilibili.com/139" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/live/live-5.webp" alt="">
+                            <span class="type">单机联机</span>
+                            <div class="mask">
+                                <span class="mark"><span class="dot"></span>Live</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">放假啦~！！</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>黑桐谷歌</span>
+                            <span class="audience"><span class="icon"></span>2.0万</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://live.bilibili.com/982192" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/live/live-6.webp" alt="">
+                            <span class="type">手游直播</span>
+                            <div class="mask">
+                                <span class="mark"><span class="dot"></span>Live</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【王者荣耀】B站最菜打野第一天</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>我就是传说中的污妖王</span>
+                            <span class="audience"><span class="icon"></span>29</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://live.bilibili.com/2537007" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/live/live-7.webp" alt="">
+                            <span class="type">生活娱乐</span>
+                            <div class="mask">
+                                <span class="mark"><span class="dot"></span>Live</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">小姐姐\教你从铂金上黄金</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>女贼m</span>
+                            <span class="audience"><span class="icon"></span>224</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://live.bilibili.com/63100" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/live/live-8.webp" alt="">
+                            <span class="type">唱见舞见</span>
+                            <div class="mask">
+                                <span class="mark"><span class="dot"></span>Live</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">vanku 学学歌清唱唱</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>暴走智障直男葉</span>
+                            <span class="audience"><span class="icon"></span>2262</span>
+                        </p>
+                    </a>
+                </div>
             </div>
-            <div class="title-r-m">
-              <a href="">
-                <span>更多</span>
-                <span class="icon"></span>
-              </a>
-            </div>
-          </div>
         </div>
-        <div class="content">
-          <div class="item">
-            <a href=""><img src="" alt=""></a>
-            <div class="info">绝地求生大逃杀！</div>
-            <div class="user">
-              <div class="name"><span class="icon"></span><span>红发杰克</span></div>
-              <div class="num"><span class="icon"></span><span>9404</span></div>
+        <div class="live-right">
+            <div class="tab">
+                <div class="tab-panel">直播排行</div>
+                <div class="tab-panel">关注的主播</div>
+                <div class="tab-panel on">为你推荐</div>
             </div>
-          </div>
-          <div class="item">
-            <a href=""><img src="" alt=""></a>
-            <div class="info">绝地求生大逃杀！</div>
-            <div class="user">
-              <div class="name"><span class="icon"></span><span>红发杰克</span></div>
-              <div class="num"><span class="icon"></span><span>9404</span></div>
+            <div class="tab-item">
+                <div class="carousel-outside">
+                    <div class="rank">
+                        <div class="r-item">
+                            <span class="number num-top">1</span>
+                            <a href="http://live.bilibili.com/545342" target="_blank" class="logo"><img src="./src/images/live/live-rank-logo-1.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/545342" target="_blank" class="content">
+                                <p>
+                                    <span>小米公司</span>
+                                    <span class="audience"><i class="icon"></i>9.0万</span>
+                                </p>
+                                <span>小米Max 2超耐久直播第二季-第15天</span>
+                            </a>
+                        </div>
+                        <div class="r-item">
+                            <span class="number num-top">2</span>
+                            <a href="http://live.bilibili.com/116" target="_blank" class="logo"><img src="./src/images/live/live-rank-logo-2.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/116" target="_blank" class="content">
+                                <p>
+                                    <span>泪腺战士</span>
+                                    <span class="audience"><i class="icon"></i>8.0万</span>
+                                </p>
+                                <span>【岚少】岚色直播间</span>
+                            </a>
+                        </div>
+                        <div class="r-item">
+                            <span class="number num-top">3</span>
+                            <a href="http://live.bilibili.com/1040" target="_blank" class="logo"><img src="./src/images/live/live-rank-logo-3.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/1040" target="_blank" class="content">
+                                <p>
+                                    <span>淳色</span>
+                                    <span class="audience"><i class="icon"></i>6.4万</span>
+                                </p>
+                                <span>【荣耀一吹】</span>
+                            </a>
+                        </div>
+                        <div class="r-item">
+                            <span class="number">4</span>
+                            <a href="http://live.bilibili.com/828" target="_blank" class="logo"><img src="./src/images/live/live-rank-logo-4.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/828" target="_blank" class="content">
+                                <p>
+                                    <span>剑网3官方视频</span>
+                                    <span class="audience"><i class="icon"></i>5.9万</span>
+                                </p>
+                                <span>19:30剑网3竞技大师赛16进8 D组</span>
+                            </a>
+                        </div>
+                        <div class="r-item">
+                            <span class="number">5</span>
+                            <a href="http://live.bilibili.com/47377" target="_blank" class="logo"><img src="./src/images/live/live-rank-logo-5.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/47377" target="_blank" class="content">
+                                <p>
+                                    <span>泠鸢yousa</span>
+                                    <span class="audience"><i class="icon"></i>4.2万</span>
+                                </p>
+                                <span>泠鸢yousa的投稿视频</span>
+                            </a>
+                        </div>
+                        <div class="r-item">
+                            <span class="number">6</span>
+                            <a href="http://live.bilibili.com/102" target="_blank" class="logo"><img src="./src/images/live/live-rank-logo-6.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/102" target="_blank" class="content">
+                                <p>
+                                    <span>宫本狗雨</span>
+                                    <span class="audience"><i class="icon"></i>3.4万</span>
+                                </p>
+                                <span>(つД`) 这游戏越来越难 好烦躁</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <div class="f-item">
+                            <a href="http://live.bilibili.com/25598" target="_blank" class="logo"><img src="./src/images/live/live-follow-logo-1.gif" alt=""></a>
+                            <a href="http://live.bilibili.com/25598" target="_blank" class="content">
+                                <p>
+                                    <span>晨上初雨</span>
+                                    <span class="audience"><i class="icon"></i>136</span>
+                                </p>
+                                <span>【阴阳师手游同人】彼岸青灯</span>
+                            </a>
+                        </div>
+                        <div class="f-item">
+                            <a href="http://live.bilibili.com/5430" target="_blank" class="logo"><img src="./src/images/live/live-follow-logo-2.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/5430" target="_blank" class="content">
+                                <p>
+                                    <span>伊丽莎白鼠</span>
+                                    <span class="audience"><i class="icon"></i>1.4万</span>
+                                </p>
+                                <span>绝地求死送快递</span>
+                            </a>
+                        </div>
+                        <div class="f-item">
+                            <a href="http://live.bilibili.com/5442" target="_blank" class="logo"><img src="./src/images/live/live-follow-logo-3.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/5442" target="_blank" class="content">
+                                <p>
+                                    <span>passの伤痕</span>
+                                    <span class="audience"><i class="icon"></i>394</span>
+                                </p>
+                                <span>【声控】攻气满满的软萌君尚大人汪！！！</span>
+                            </a>
+                        </div>
+                        <div class="f-item">
+                            <a href="http://live.bilibili.com/85602" target="_blank" class="logo"><img src="./src/images/live/live-follow-logo-4.webp" alt=""></a>
+                            <a href="http://live.bilibili.com/85602" target="_blank" class="content">
+                                <p>
+                                    <span>兔爹哭晕在厕所</span>
+                                    <span class="audience"><i class="icon"></i>7371</span>
+                                </p>
+                                <span>时尚区最菜up主打农药</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <div class="carousel-inside">
+                            <div class="slide">
+                                <div>
+                                    <a href="http://www.bilibili.com/blackboard/vc-graduate-pc.html" target="_blank">
+                                        <img src="./src/images/live/live-carousel-1.webp" alt="">
+                                        <!--<div class="mask"><span>加油！</span></div>-->
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://www.bilibili.com/blackboard/activity-SkVUg44WW.html" target="_blank">
+                                        <img src="./src/images/live/live-carousel-2.webp" alt="">
+                                        <!--<div class="mask"><span>加油！</span></div>-->
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://h.bilibili.com/ywh/" target="_blank">
+                                        <img src="./src/images/live/live-carousel-3.webp" alt="">
+                                        <!--<div class="mask"><span>加油！</span></div>-->
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="dot">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="rec-card">
+                            <a href="http://live.bilibili.com/148" target="_blank">
+                                <img src="./src/images/live/live-rec-card-1.webp" alt="">
+                                <div class="mask">
+                                    <span>超心塞的</span>
+                                </div>
+                            </a>
+                            <a href="http://live.bilibili.com/145" target="_blank">
+                                <img src="./src/images/live/live-rec-card-2.gif" alt="">
+                                <div class="mask">
+                                    <span>扎双马尾</span>
+                                </div>
+                            </a>
+                            <a href="http://live.bilibili.com/398" target="_blank">
+                                <img src="./src/images/live/live-rec-card-3.webp" alt="">
+                                <div class="mask">
+                                    <span>易世樊花</span>
+                                </div>
+                            </a>
+                            <a href="http://live.bilibili.com/48" target="_blank">
+                                <img src="./src/images/live/live-rec-card-4.webp" alt="">
+                                <div class="mask">
+                                    <span>SNH48官方账号</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="item">
-            <a href=""><img src="" alt=""></a>
-            <div class="info">绝地求生大逃杀！</div>
-            <div class="user">
-              <div class="name"><span class="icon"></span><span>红发杰克</span></div>
-              <div class="num"><span class="icon"></span><span>9404</span></div>
-            </div>
-          </div>
-          <div class="item">
-            <a href=""><img src="" alt=""></a>
-            <div class="info">绝地求生大逃杀！</div>
-            <div class="user">
-              <div class="name"><span class="icon"></span><span>红发杰克</span></div>
-              <div class="num"><span class="icon"></span><span>9404</span></div>
-            </div>
-          </div>
-          <div class="item">
-            <a href=""><img src="" alt=""></a>
-            <div class="info">绝地求生大逃杀！</div>
-            <div class="user">
-              <div class="name"><span class="icon"></span><span>红发杰克</span></div>
-              <div class="num"><span class="icon"></span><span>9404</span></div>
-            </div>
-          </div>
-          <div class="item">
-            <a href=""><img src="" alt=""></a>
-            <div class="info">绝地求生大逃杀！</div>
-            <div class="user">
-              <div class="name"><span class="icon"></span><span>红发杰克</span></div>
-              <div class="num"><span class="icon"></span><span>9404</span></div>
-            </div>
-          </div>
-          <div class="item">
-            <a href=""><img src="" alt=""></a>
-            <div class="info">绝地求生大逃杀！</div>
-            <div class="user">
-              <div class="name"><span class="icon"></span><span>红发杰克</span></div>
-              <div class="num"><span class="icon"></span><span>9404</span></div>
-            </div>
-          </div>
-          <div class="item">
-            <a href=""><img src="" alt=""></a>
-            <div class="info">绝地求生大逃杀！</div>
-            <div class="user">
-              <div class="name"><span class="icon"></span><span>红发杰克</span></div>
-              <div class="num"><span class="icon"></span><span>9404</span></div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="live-r">
-        
-      </div>
     </div>
     <!--BDF 2017-->
     <!--动画-->
+    <div class="anime">
+        <div class="anime-left">
+            <div class="anime-title">
+                <span class="icon"></span>
+                <span class="name">动画</span>
+                <span class="state on">有新动态</span>
+                <span class="news">最新投稿</span>
+                <a class="hot" href="http://www.bilibili.com/video/av11054182/" target="_blank">
+                    <span class="icon"></span>
+                    <span class="a-hover">致与名为现实的怪物战斗的人们</span>
+                </a>
+                <div class="status">
+                    <span class="icon"></span>
+                    <span class="status-info"><span class="status-num">666</span>条新动态</span>
+                </div>
+                <a href="" target="_blank" class="more">
+                    <span class="more-text">更多<span class="icon"></span></span>
+                </a>
+            </div>
+            <div class="anime-ct">
+                <div class="item a-hover">
+                    <a href="http://www.bilibili.com/video/av1731700" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/anime/anime-1.webp" alt="">
+                            <div class="mask">
+                                <span class="time">08:10</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【综漫 ASMV】 弱者（完整版）/The Weak (Full ver.)</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>438.7万</span>
+                            <span class="audience"><span class="icon"></span>11.0万</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://www.bilibili.com/video/av11180211" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/anime/anime-2.webp" alt="">
+                            <div class="mask">
+                                <span class="time">05:00</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【一拳超人】【全程同步高燃混剪】琦玉老师打爆宇宙！</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>8200</span>
+                            <span class="audience"><span class="icon"></span>137</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://www.bilibili.com/video/av10854507" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/anime/anime-3.webp" alt="">
+                            <div class="mask">
+                                <span class="time">12:17</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【著作权科普】谈夏达与夏天岛版权之争</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>10.6万</span>
+                            <span class="audience"><span class="icon"></span>2877</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://www.bilibili.com/video/av11216830" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/anime/anime-4.webp" alt="">
+                            <div class="mask">
+                                <span class="time">03:21</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【泛式】英雄学院: 轰vs绿谷——「焦冻·原点」</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>2.1万</span>
+                            <span class="audience"><span class="icon"></span>353</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://www.bilibili.com/video/av2052482" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/anime/anime-5.webp" alt="">
+                            <div class="mask">
+                                <span class="time">43:15</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【怀旧排名】十年前天朝网络上最风靡的动画Top30</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>79.8万</span>
+                            <span class="audience"><span class="icon"></span>23.7万</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://www.bilibili.com/video/av11112057" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/anime/anime-6.webp" alt="">
+                            <div class="mask">
+                                <span class="time">03:58</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【高考应援】新海诚cross road唯美短片祝君顺利！</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>1031</span>
+                            <span class="audience"><span class="icon"></span>45</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://www.bilibili.com/video/av10570901" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/anime/anime-7.webp" alt="">
+                            <div class="mask">
+                                <span class="time">05:37</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【黄漫/RE：C】纱雾和军服姬之间真·不可告人的秘密</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>4.3万</span>
+                            <span class="audience"><span class="icon"></span>310</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="item a-hover">
+                    <a href="http://www.bilibili.com/video/av8506947" target="_blank">
+                        <div class="pic">
+                            <img src="./src/images/anime/anime-8.webp" alt="">
+                            <div class="mask">
+                                <span class="time">11:23</span>
+                            </div>
+                        </div>
+                        <p class="a-hover">【2017拜年祭单品】漫画家桐人—我只想讲一个关于梦想的故事</p>
+                        <p class="info">
+                            <span class="auther"><span class="icon"></span>47.4万</span>
+                            <span class="audience"><span class="icon"></span>5119</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="anime-right">
+            <div class="title">
+                <div class="tab">
+                    <p>排行</p>
+                    <div class="tab-panel on">全部</div>
+                    <div class="tab-panel">原创</div>
+                </div>
+                <div class="toggle">
+                    <span class="selected">三日</span>
+                    <span class="icon"></span>
+                    <ul class="dropdown-list">
+                        <!--<li>三日</li>-->
+                        <li>一周</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="tab-item">
+                <div class="carousel-outside">
+                    <div class="all tab-item-a">
+                        <div class="a-item">
+                            <span class="number num-top">1</span>
+                            <a href="http://www.bilibili.com/video/av11080169/" target="_blank" class="content">
+                                <div class="logo"><img src="./src/images/anime/anime-rank-all-1.webp" alt=""></div>
+                                <div class="title">
+                                    <p class="text-top a-hover">【Lex】烂片时代开创者！2014年的神级烂片</p>
+                                    <p class="point">综合评分：55.9万</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number num-top">2</span>
+                            <a href="http://www.bilibili.com/video/av11163406/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">直至地老天荒,独剩你我【凤求凰李白】</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number num-top">3</span>
+                            <a href="http://www.bilibili.com/video/av11148797/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">【百试大大】不玩腿的少年不是好少年！这腿我能玩一年哟~</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number">4</span>
+                            <a href="http://www.bilibili.com/video/av11168710/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">【泪燃/综漫/AMV】即使放弃过 失败过 痛苦过 但也要向前啊</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number">5</span>
+                            <a href="http://www.bilibili.com/video/av11060512/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">我看的铠甲勇士不可能这么搞笑</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number">6</span>
+                            <a href="http://www.bilibili.com/video/av11194697/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">【手办•1080P•C4D】超可爱的AI爱酱手办？</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number">7</span>
+                            <a href="http://www.bilibili.com/video/av11176360/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">【六道杂谈】游戏王战斗城市篇：万恶之源！海马VS游戏</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="self tab-item-a">
+                        <div class="a-item">
+                            <span class="number num-top">1</span>
+                            <a href="" target="_blank" class="content">
+                                <div class="logo"><img src="./src/images/anime/anime-rank-self-1.webp" alt=""></div>
+                                <div class="title">
+                                    <p class="text-top a-hover">【Lex】烂片时代开创者！2014年的神级烂片</p>
+                                    <p class="point">综合评分：55.9万</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number num-top">2</span>
+                            <a href="http://www.bilibili.com/video/av11176360/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">【六道杂谈】游戏王战斗城市篇：万恶之源！海马VS游戏</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number num-top">3</span>
+                            <a href="http://www.bilibili.com/video/av11168710/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">【泪燃/综漫/AMV】即使放弃过 失败过 痛苦过 但也要向前啊</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number">4</span>
+                            <a href="http://www.bilibili.com/video/av11194697/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">【手办•1080P•C4D】超可爱的AI爱酱手办？</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number">5</span>
+                            <a href="http://www.bilibili.com/video/av11163406/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">直至地老天荒,独剩你我【凤求凰李白】</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number">6</span>
+                            <a href="http://www.bilibili.com/video/av11148797/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">【百试大大】不玩腿的少年不是好少年！这腿我能玩一年哟~</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="a-item">
+                            <span class="number">7</span>
+                            <a href="http://www.bilibili.com/video/av11060512/" target="_blank" class="content">
+                                <div class="title">
+                                    <p class="text a-hover">我看的铠甲勇士不可能这么搞笑</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" target="_blank" class="see-more">
+                <span>查看更多</span>
+                <span class="icon"></span>
+            </a>
+        </div>
+    </div>
     <!--番剧-->
     <!--番剧动态-->
-  </div>
-  <div class="side-nav">
+</div>
+<div class="side-nav">
 
-  </div>
-  <div class="footer">
+</div>
+<div class="footer">
 
-  </div>
+</div>
 </body>
 </html>

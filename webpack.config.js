@@ -1,10 +1,10 @@
 const path = require('path')
 
 module.exports = {
-    entry: '',
+    entry: 'entry.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'bilibili.js'
+        filename: 'bilibili-bundle.js'
     },
     module: {
     rules: [
