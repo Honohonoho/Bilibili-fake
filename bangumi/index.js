@@ -113,6 +113,7 @@ HoverColorChange = (function(){
     }
 })()
 HoverColorChange.init($('.bangumi-left'));
+HoverColorChange.init($('.bangumi-right'));
 
 //轮播
 function Carousel($ct){
@@ -216,3 +217,43 @@ function Carousel($ct){
   })()
 
 _Carousel.init($('.carousel-inside'));  //启动
+
+// tab切换
+function tabChange($ct){
+    this.$ct = $ct;
+    this.init();
+    this.bind();
+}
+tabChange.prototype.init = function(){
+    var $node = this.$node = this.$ct.find('.tab-change'), 
+        $tab = this.$tab = $node.find('.item'),
+        $item = this.$item = $node.find('.schedule'),
+        $itemList = this.$itemList = $item.children();
+}
+tabChange.prototype.bind = function(){
+    var _this = this;
+    this.$tab.on('click', function(e){
+	    var index = $(e.target).index(),
+            $clickTarget = $(e.target);
+        $clickTarget.siblings().removeClass('on');
+        $clickTarget.addClass('on');
+        _this.tabchange(index)
+    })
+}
+tabChange.prototype.tabchange = function(index){
+    var _this = this,
+        $itemTarget = $(_this.$itemList[index]);
+
+    $itemTarget.siblings().removeClass('on')
+    $itemTarget.addClass('on');
+}
+TabChange = (function($ct){
+    return {
+        init: function($ct){
+            new tabChange($ct)
+        }
+    }
+})();
+
+TabChange.init($('.bangumi-schedule'));
+

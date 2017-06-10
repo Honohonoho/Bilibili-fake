@@ -5,6 +5,7 @@
 }
 a {
     text-decoration: none;
+    color: #222;
 }
 ul,ol,li {
     list-style: none;
@@ -24,6 +25,317 @@ body {
     margin:0 auto;
     border: 1px solid #333;
 }
+.main-page >.bangumi-schedule {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-page > .bangumi-schedule> .bangumi-left{
+    width: 700px;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.icon{
+    background-image: url(./icons3.png);
+    background-position: -141px -649px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -10px;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.name{
+    font-size: 24px!important;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: 20px;
+    color: #222;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.week{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    margin-right: 20px;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccd0d7
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.week >.on{
+    position: relative;
+    transition: .2s;
+    color: #00a1d6;
+    border-bottom: 1px solid #00a1d6;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.week >.on:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 3px dashed #00a1d6;
+    border-bottom-style: solid;
+    border-top: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.week >.w-item {
+    cursor: pointer;
+    width: 56px;
+    text-align: center;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.week >.w-item:hover{
+    color: #00a1d6;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.more{
+    border: 1px solid #f25d8e;
+    width: 104px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #f25d8e;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: .1s;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.more:hover{
+    color: #fff;
+    background-color: #f25d8e;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.more >.more-text{
+    display: inline-block;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.bangumi-title >.more >.more-text >.icon{
+    display: inline-block;
+    background-position: -478px -281px;
+    background-image: url(./icons3.png);
+    width: 6px;
+    height: 11px;
+    margin: -2px 0 0 5px;
+    transition: all .2s;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule{
+    width: 700px;
+    margin: 26px 0 0 0;
+    height: 400px;
+    overflow-y: auto;
+    position: relative;
+}
+/*滚动条样式*/
+.main-page > .bangumi-schedule> .bangumi-left >.schedule::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background: #aaa;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule::-webkit-scrollbar-button{
+    display: none;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule::-webkit-scrollbar-thumb{
+    background: #e5e9ef;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule::-webkit-scrollbar-track{
+    display: none;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule::-webkit-scrollbar-track-piece{
+    background: #ddd;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule >.sch-item{
+    position: absolute;
+    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule >.on{
+    display: flex;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule >.sch-item >.item{
+    width: 180px;
+    margin-bottom: 36px;
+    margin-right: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule >.sch-item >.item >.logo{
+    width: 72px;
+    height: 72px;
+    margin-right: 12px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule >.sch-item >.item >.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 96px;
+    height: 72px;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule >.sch-item >.item >.info >.text{
+    color: #aaa;
+    line-height: 18px;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule >.sch-item >.item >.info >.text >span{
+    background: #b8c0cc;
+    color: #fff;
+    border-radius: 9px;
+    min-width: 36px;
+    max-width: 82px;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 0 4px;
+    margin-left: 5px;
+}
+.main-page > .bangumi-schedule> .bangumi-left >.schedule >.sch-item >.item >.info >.text >.new{
+    background: #ff8eb3;
+}
+.main-page > .bangumi-schedule> .bangumi-right{
+    width: 260px;
+    min-height: 360px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.title{
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 5px;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.title >p{
+    font-size: 18px;
+    margin-right: 20px;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.title >.toggle{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff;
+    padding: 0 7px;
+    height: 24px;
+    line-height: 22px;
+    border: 1px solid #ccd0d7;
+    border-radius: 4px;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.title >.toggle >.selected{
+    display: inline-block;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.title >.toggle >.icon{
+    background-position: -475px -157px;
+    background-image: url(./icons3.png);
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 6px;
+    margin-left: 5px;
+    margin-top: -1px;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.title >.toggle >.dropdown-list{
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccd0d7;
+    border-top: 0;
+    left: -1px;
+    top: 22px;
+    z-index: 10;
+    display: none;
+    border-radius: 0 0 4px 4px;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.title >.toggle >.dropdown-list >li{
+    cursor: pointer;
+    padding: 3px 7px;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.rank{
+    position: relative;
+    width: 260px;
+    max-height: 360px;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.rank >.a-item{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 260px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.rank >.a-item >.number{
+    position: absolute;
+    background-color: #b8c0cc;
+    color: #fff;
+    top: 0;
+    left: 0;
+    margin-right: 6px;
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.rank >.a-item >.num-top{
+    background-color: #f25d8e;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.rank >.a-item >.content{
+    width: 100%;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.rank >.a-item >.content >.title{
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.rank >.a-item >.content >.title >.text-top{
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.rank >.a-item >.content >.title >.text{
+    color: #99a2aa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.see-more{
+    display: block;
+    height: 24px;
+    line-height: 23px;
+    background-color: #e5e9ef;
+    text-align: center;
+    border: 1px solid #e0e6ed;
+    color: #222;
+    border-radius: 4px;
+    transition: .2s;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.see-more:hover{
+    background-color: #ccd0d7;
+    border-color: #ccd0d7;
+}
+.main-page > .bangumi-schedule> .bangumi-right >.see-more >.icon{
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -478px -218px;
+    background-image: url(./icons3.png);
+    width: 6px;
+    height: 12px;
+    margin: -2px 0 0 5px;
+}
+
+/***************************************************/
+
 .main-page >.bangumi {
     margin-bottom: 30px;
     display: flex;
