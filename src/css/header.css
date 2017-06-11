@@ -22,7 +22,7 @@ body {
 /*页面主体*/
 .main-page{
     width: 980px;
-    height: 1900px;
+    min-height: 1900px;
     margin:0 auto;
 }
 /*顶部*/

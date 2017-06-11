@@ -1,0 +1,96 @@
+/*特别推荐*/
+.main-page >.special {
+    margin-bottom: 40px;
+}
+.main-page > .special >.title{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-page > .special >.title >.icon{
+    background-image: url(../images/icons3.png);
+    background-position: -141px -776px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -10px;
+}
+.main-page > .special > .title > p{
+    font-size: 24px!important;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: 20px;
+    color: #222;
+}
+.main-page > .special>.spe-ct{
+    display: flex;
+    justify-content: space-between
+}
+.main-page > .special>.spe-ct >.spe-ct-left{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 700px;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item >a >img{
+    width: 160px;
+    height: 100px;
+    border-radius: 4px;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item >.user{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    display: inline-block;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item >.user >.info {
+    display: flex;
+    justify-content: space-between;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item >.user >.info >.name{
+    position: relative;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item >.user >.info >.logo{
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item >.user >.info >.name {
+    width: 68px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item >.user >.info >.tag{
+    width: 30px;
+    color: #aaa;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-item >.title{
+    margin-top: -25px;
+    word-break: break-all;
+    word-wrap: break-word;
+    height: 40px;
+    line-height: 20px;
+}
+.main-page > .special>.spe-ct >.spe-ct-left >.spe-ad{
+    width: 260px;
+}
+

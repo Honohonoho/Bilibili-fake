@@ -1,19 +1,19 @@
 /*动画*/
-.main-page >.anime {
-    margin-bottom: 55px;
+.main-page >.tech {
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
 }
-.main-page > .anime> .anime-left{
+.main-page > .tech> .tech-left{
     width: 700px;
 }
-.main-page > .anime> .anime-left >.anime-title{
+.main-page > .tech> .tech-left >.tech-title{
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.main-page > .anime> .anime-left >.anime-title >.on{
+.main-page > .tech> .tech-left >.tech-title >.on{
     position: relative;
     margin-right: 12px;
     height: 24px;
@@ -24,7 +24,7 @@
     color: #00a1d6;
     border-bottom: 1px solid #00a1d6;
 }
-.main-page > .anime> .anime-left >.anime-title >.on:before{
+.main-page > .tech> .tech-left >.tech-title >.on:before{
     content: '';
     position: absolute;
     left: 50%;
@@ -38,9 +38,9 @@
     border-left-color: transparent;
     border-right-color: transparent;
 }
-.main-page > .anime> .anime-left >.anime-title >.icon{
+.main-page > .tech> .tech-left >.tech-title >.icon{
     background-image: url(../images/icons3.png);
-    background-position: -141px -908px;
+    background-position: -141px -524px;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -48,25 +48,25 @@
     vertical-align: middle;
     margin-top: -10px;
 }
-.main-page > .anime> .anime-left >.anime-title >.name{
+.main-page > .tech> .tech-left >.tech-title >.name{
     font-size: 24px!important;
     line-height: 24px;
     font-weight: 400;
     margin-right: 20px;
     color: #222;
 }
-.main-page > .anime> .anime-left >.anime-title >.num{
+.main-page > .tech> .tech-left >.tech-title >.num{
     color: #99a2aa;
 }
-.main-page > .anime> .anime-left >.anime-title >.num>span{
+.main-page > .tech> .tech-left >.tech-title >.num>span{
     color: #00a1d6;
 }
-.main-page > .anime> .anime-left >.anime-title >.hot{
+.main-page > .tech> .tech-left >.tech-title >.hot{
     margin-left: 40px;
     padding-right: 10px;
     color: #6d757a;
 }
-.main-page > .anime> .anime-left >.anime-title >.hot >.icon{
+.main-page > .tech> .tech-left >.tech-title >.hot >.icon{
     display: inline-block;
     vertical-align: middle;
     background-image: url(../images/icons3.png);
@@ -75,7 +75,7 @@
     height: 14px;
     margin-top: -3px;
 }
-.main-page > .anime> .anime-left >.anime-title >.status{
+.main-page > .tech> .tech-left >.tech-title >.status{
     display: inline-block;
     cursor: pointer;
     border: 1px solid #ccd0d7;
@@ -86,7 +86,7 @@
     margin-left: 10px;
     transition: tab-item-a .2s;
 }
-.main-page > .anime> .anime-left >.anime-title >.status >.icon{
+.main-page > .tech> .tech-left >.tech-title >.status >.icon{
     background-image: url(../images/icons3.png);
     display: inline-block;
     width: 12px;
@@ -96,16 +96,16 @@
     margin-top: 5px;
     background-position: -475px -89px;
 }
-.main-page > .anime> .anime-left >.anime-title >.status >.status-info{
+.main-page > .tech> .tech-left >.tech-title >.status >.status-info{
     display: inline-block;
     vertical-align: top;
     line-height: 22px;
     margin-left: 5px;
 }
-.main-page > .anime> .anime-left >.anime-title >.status >.status-info >.status-num{
+.main-page > .tech> .tech-left >.tech-title >.status >.status-info >.status-num{
     font-weight: bold;
 }
-.main-page > .anime> .anime-left >.anime-title >.more{
+.main-page > .tech> .tech-left >.tech-title >.more{
     display: inline-block;
     width: 52px;
     height: 24px;
@@ -118,13 +118,13 @@
     margin: 0 0 0 10px;
     transition: tab-item-a .2s;
 }
-.main-page > .anime> .anime-left >.anime-title >.more:hover{
+.main-page > .tech> .tech-left >.tech-title >.more:hover{
     background-color: #ccd0d7;
 }
-.main-page > .anime> .anime-left >.anime-title >.more >.more-text{
+.main-page > .tech> .tech-left >.tech-title >.more >.more-text{
     display: inline-block;
 }
-.main-page > .anime> .anime-left >.anime-title >.more >.more-text >.icon{
+.main-page > .tech> .tech-left >.tech-title >.more >.more-text >.icon{
     display: inline-block;
     background-position: -478px -218px;
     background-image: url(../images/icons3.png);
@@ -133,27 +133,27 @@
     margin: -2px 0 0 2px;
     transition: all .2s;
 }
-.main-page > .anime> .anime-left >.anime-ct{
+.main-page > .tech> .tech-left >.tech-ct{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item{
+.main-page > .tech> .tech-left >.tech-ct >.item{
     width: 160px;
     height: 148px;
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.pic{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.pic{
     position: relative;
     width: 160px;
     height: 100px;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.pic >img{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.pic >img{
     border-radius: 4px;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.pic >.mask{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.pic >.mask{
     opacity: 0;
     position: absolute;
     top: 0;
@@ -164,7 +164,7 @@
     border-radius: 4px;
     transition: opacity .3s;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.pic >.mask >.time{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.pic >.mask >.time{
     position: absolute;
     opacity: 1;
     bottom: 0;
@@ -177,18 +177,18 @@
     padding: 3px 5px;
     border-radius: 4px 0 4px 0;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.a-hover {
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.a-hover {
     padding-top: 8px;
     height: 40px;
     line-height: 20px;
     transition: tab-item-a .2s linear;
     color: #222;
     word-wrap: break-word;
-    word-break: break-tab-item-a;
+    word-break: break-all;
     overflow: hidden;
     text-align: left;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.info{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.info{
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -198,7 +198,7 @@
     background-color: #fff;
     transition: tab-item-a .3s;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.info >.auther{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.info >.auther{
     line-height: 12px;
     height: 14px;
     width: 50%;
@@ -206,7 +206,7 @@
     overflow: hidden;
     vertical-align: bottom;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.info >.auther >.icon{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.info >.auther >.icon{
     background-position: -282px -90px;
     background-image: url(../images/icons3.png);
     display: inline-block;
@@ -215,14 +215,14 @@
     vertical-align: top;
     margin-right: 5px;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.info >.audience{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.info >.audience{
     line-height: 12px;
     height: 14px;
     display: inline-block;
     overflow: hidden;
     vertical-align: bottom;
 }
-.main-page > .anime> .anime-left >.anime-ct >.item >a >.info >.audience >.icon{
+.main-page > .tech> .tech-left >.tech-ct >.item >a >.info >.audience >.icon{
     background-position: -282px -218px;
     background-image: url(../images/icons3.png);
     display: inline-block;
@@ -231,30 +231,30 @@
     vertical-align: top;
     margin-right: 5px;
 }
-.main-page > .anime> .anime-right{
+.main-page > .tech> .tech-right{
     width: 260px;
     min-height: 360px;
     overflow: hidden;
 }
-.main-page > .anime> .anime-right >.title{
+.main-page > .tech> .tech-right >.title{
     display: flex;
     justify-content: space-between;
     height: 24px;
     line-height: 24px;
 }
-.main-page > .anime> .anime-right >.title >.tab{
+.main-page > .tech> .tech-right >.title >.tab{
     display: flex;
     justify-content: flex-start;
     
 }
-.main-page > .anime> .anime-right >.title >.tab >p{
+.main-page > .tech> .tech-right >.title >.tab >p{
     font-size: 18px;
     margin-right: 20px;
 }
-.main-page > .anime> .anime-right >.title >.tab >.on{
+.main-page > .tech> .tech-right >.title >.tab >.on{
     border-bottom: 1px solid #00a1d6;
 }
-.main-page > .anime> .anime-right >.title >.tab >.on:before{
+.main-page > .tech> .tech-right >.title >.tab >.on:before{
     content: '';
     position: absolute;
     left: 50%;
@@ -268,10 +268,10 @@
     border-left-color: transparent;
     border-right-color: transparent;
 }
-.main-page > .anime> .anime-right >.title >.tab >.tab-panel:hover{
+.main-page > .tech> .tech-right >.title >.tab >.tab-panel:hover{
     color: #00a1d6;
 }
-.main-page > .anime> .anime-right >.title >.tab >.tab-panel{
+.main-page > .tech> .tech-right >.title >.tab >.tab-panel{
     position: relative;
     margin-right: 12px;
     height: 24px;
@@ -280,7 +280,7 @@
     padding: 1px 0 2px 0;
     transition: .2s;
 }
-.main-page > .anime> .anime-right >.title >.toggle{
+.main-page > .tech> .tech-right >.title >.toggle{
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -291,10 +291,10 @@
     border: 1px solid #ccd0d7;
     border-radius: 4px;
 }
-.main-page > .anime> .anime-right >.title >.toggle >.selected{
+.main-page > .tech> .tech-right >.title >.toggle >.selected{
     display: inline-block;
 }
-.main-page > .anime> .anime-right >.title >.toggle >.icon{
+.main-page > .tech> .tech-right >.title >.toggle >.icon{
     background-position: -475px -157px;
     background-image: url(../images/icons3.png);
     display: inline-block;
@@ -304,7 +304,7 @@
     margin-left: 5px;
     margin-top: -1px;
 }
-.main-page > .anime> .anime-right >.title >.toggle >.dropdown-list{
+.main-page > .tech> .tech-right >.title >.toggle >.dropdown-list{
     position: absolute;
     width: 100%;
     border: 1px solid #ccd0d7;
@@ -315,27 +315,27 @@
     display: none;
     border-radius: 0 0 4px 4px;
 }
-.main-page > .anime> .anime-right >.title >.toggle >.dropdown-list >li{
+.main-page > .tech> .tech-right >.title >.toggle >.dropdown-list >li{
     cursor: pointer;
     padding: 3px 7px;
 }
-.main-page > .anime> .anime-right >.tab-item{
+.main-page > .tech> .tech-right >.tab-item{
     position: relative;
     margin-top: 23px;
     width: 260px;
     height: 298px;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside{
     position: absolute;
     display: flex;
     justify-content: flex-start;
     width: 260px;
     z-index: 999;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a{
     width: 260px;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item{
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -343,7 +343,7 @@
     padding-left: 25px;
     margin-bottom: 20px;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.number{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.number{
     position: absolute;
     background-color: #b8c0cc;
     color: #fff;
@@ -358,39 +358,39 @@
     font-weight: bolder;
     text-align: center;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.num-top{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.num-top{
     background-color: #f25d8e;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.logo{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.logo{
     margin-right: 5px;
     border-radius: 4px;
     width: 80px;
     height: 50px;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.logo >img{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.logo >img{
     border-radius: 4px;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title{
     color: #222;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title >.text{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title >.text{
     line-height: 18px;
     height: 18px;
     overflow: hidden;
 }
-.main-page > .anime> .anime-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title >.point{
+.main-page > .tech> .tech-right >.tab-item >.carousel-outside >.tab-item-a >.a-item >.content >.title >.point{
     margin-top: 4px;
     color: #99a2aa;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.main-page > .anime> .anime-right >.see-more{
+.main-page > .tech> .tech-right >.see-more{
     display: block;
     height: 24px;
     line-height: 23px;
@@ -401,11 +401,11 @@
     border-radius: 4px;
     transition: .2s;
 }
-.main-page > .anime> .anime-right >.see-more:hover{
+.main-page > .tech> .tech-right >.see-more:hover{
     background-color: #ccd0d7;
     border-color: #ccd0d7;
 }
-.main-page > .anime> .anime-right >.see-more >.icon{
+.main-page > .tech> .tech-right >.see-more >.icon{
     display: inline-block;
     vertical-align: middle;
     background-position: -478px -218px;

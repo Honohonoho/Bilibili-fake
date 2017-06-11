@@ -1,6 +1,6 @@
-/*动画*/
+/*音乐*/
 .main-page >.music {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
 }

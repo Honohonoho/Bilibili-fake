@@ -1,0 +1,111 @@
+/*底部*/
+.footer {
+    background-color: #f6f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+.footer >.footer-top{
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin:0 auto;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.footer >.footer-top >.left{
+    width: 300px;
+    border-right: solid 1px #e5e9ef;
+}
+.footer >.footer-top >.middle{
+    width: 301px;
+    border-right: solid 1px #e5e9ef;
+}
+.footer >.footer-top >.right{
+    width: 300px;
+}
+.footer >.footer-top >div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer >.footer-top >div >.title{
+    margin-bottom: 22px;
+    color: #99a2aa;
+}
+.footer >.footer-top >div >.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer >.footer-top >div >.wrapper >div{
+    width: 100px;
+    margin-bottom: 16px;
+}
+.footer >.footer-top >div >.wrapper >div >a:hover{
+    color: #00a1d6;
+}
+.footer >.footer-top >.right >.wrapper >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 82px;
+    height: 80px;
+}
+.footer >.footer-top >.right >.wrapper >div:hover{
+    opacity: 0.8;
+}
+.footer >.footer-top >.right >.wrapper >.phone >a >span{
+    background-image: url(../images/icons5.png);
+    background-position: -1024px -194px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;  
+}
+.footer >.footer-top >.right >.wrapper >.weibo >a >span{
+    background-image: url(../images/icons5.png);
+    background-position: -1024px -322px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+.footer >.footer-top >.right >.wrapper >.weixin >a >span{
+    background-image: url(../images/icons5.png);
+    background-position: -1024px -66px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+.footer >.footer-bottom{
+    width: 980px;
+    margin:0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer >.footer-bottom >.logo{
+    margin-right: 20px;
+}
+.footer >.footer-bottom >.text{
+    color: #99a2aa;
+    line-height: 24px;
+}
+.footer >.footer-bottom >.text >.tip >img{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-right: 2px;
+}
+.footer >.footer-bottom >.text >.tip >.icon{
+    background-image: url(../images/icons5.png);
+    background-position: -1367px -89px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+}
+ 
