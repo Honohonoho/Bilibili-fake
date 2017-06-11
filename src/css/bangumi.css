@@ -1,6 +1,6 @@
 /*番剧更新表 番剧动态*/
 .main-page >.bangumi-schedule {
-    margin-bottom: 30px;
+    margin-bottom: 55px;
     display: flex;
     justify-content: space-between;
 }
@@ -518,7 +518,7 @@
     vertical-align: bottom;
 }
 .main-page > .bangumi> .bangumi-left >.bangumi-ct >.item >a >.info >.auther >.icon{
-    background-position: -282px -154px;
+    background-position: -282px -90px;
     background-image: url(../images/icons3.png);
     display: inline-block;
     width: 12px;
