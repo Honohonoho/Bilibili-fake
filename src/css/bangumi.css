@@ -311,7 +311,7 @@
 /********************番剧动态*******************************/
 
 .main-page >.bangumi {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
 }

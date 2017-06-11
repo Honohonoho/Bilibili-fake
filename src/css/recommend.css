@@ -2,7 +2,7 @@
 .main-page > .recommend {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .main-page > .recommend > .carousel {
     position: relative;

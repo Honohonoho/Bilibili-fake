@@ -23,7 +23,8 @@ body {
 .main-page{
     width: 980px;
     min-height: 1900px;
-    margin:0 auto;
+    margin: 0 auto;
+    position: relative;
 }
 /*顶部*/
 .header{
@@ -38,30 +39,29 @@ body {
     height: 42px;
     font-size: 13px;
     z-index: 999;
-    background-color: rgba(204,204,204,.7);
+    background-color: rgba(0, 0, 0, 0.2)
 }
 .nav-ct {
     width: 980px;
     margin: 0 auto;
 }
 .nav-ct .top-link {
-    color: #222;
+    color: #fff;
     padding: 0 12px;
     display: inline-block;
 }
 .nav-ct ul > li {
     line-height: 42px;
 }
-nav-ct ul > li >.top-link {
-    width: 50px;
-    height: 42px;
-    padding: 0 0 0 20px;
-}
 .menu-nav {
     float:left;
 }
 .menu-nav > ul >li {
     float: left;
+    transition: 0.3s background-color;
+}
+.menu-nav > ul >li:hover{
+    background: rgba(255, 255, 255, 0.24);
 }
 .menu-nav > ul > li:nth-child(1) {
     background-image: url(../images/icons.png);
@@ -74,8 +74,27 @@ nav-ct ul > li >.top-link {
 .user-nav {
     float: right;
 }
-.user-nav > ul > li {
+.user-nav > ul > .item {
     float: left;
+    transition: 0.3s background-color;
+}
+.user-nav > ul > .item:not(.contribute):hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+.user-nav > ul >.contribute{
+    background-image: url(../images/header/contribute.png);
+    background-position: center center;
+    height: 48px;
+    width: 58px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+}
+.user-nav > ul >.contribute:hover{
+    opacity: 0.9;
+    transition: 0.3s
+}
+.user-nav > ul >.contribute >.top-link{
+    padding: 0;
 }
 .nav-img {
     background-image: url('../images/header/nav-img.png');

@@ -1,0 +1,49 @@
+/*侧边导航栏*/
+.main-page >.side-nav{
+    max-width: 60px;
+    max-height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: 500px;
+}
+.main-page >.side-nav >.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 500px;
+    max-width: 60px;
+    background-color: #f6f9fa;
+    border: 1px solid #e5e9ef;
+    overflow: hidden;
+    border-radius: 4px;
+    text-align: center;
+}
+.main-page >.side-nav >.wrapper >.item{
+    width: 48px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    transition: background-color .3s,color .3s;
+    cursor: pointer;
+}
+.main-page >.side-nav >.wrapper >.on {
+    background-color: #00a1d6;
+    color: #fff;
+    border-color: #00a1d6;
+}
+.main-page >.side-nav >.wrapper >.go-top{
+    background-image: url(../images/icons3.png);
+    height: 48px;
+    background-position: -648px -72px;
+}
+.main-page >.side-nav >.wrapper >.go-top:hover{
+    background-color: #00a1d6;
+    background-position: -714px -72px;
+    border-color: #00a1d6;
+}
+.main-page >.side-nav >.wrapper >.item:hover{
+    background-color: #00a1d6;
+    color: #fff;
+    border-color: #00a1d6;
+}
