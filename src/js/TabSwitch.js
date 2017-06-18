@@ -46,10 +46,6 @@ function tabSwitch($ct){
       left: '+=' + this.$nodeWidth*n //不相邻的图片距离
     },function(){
       _this.curIndex -= n;
-    //   if(_this.curIndex < 0){ //当滚到第一张之前
-    //     _this.$nodeList.css({'left': -(_this.$nodeLength*_this.$nodeWidth)}); //回到最后一张图片
-    //     _this.curIndex = _this.$nodeLength - 1;
-    //   }
       _this.tabChange();
     })
     this.isAnimate = false;
@@ -64,10 +60,6 @@ function tabSwitch($ct){
       left: '-=' + this.$nodeWidth*n //不相邻的图片距离
     },function(){
       _this.curIndex += n;
-    //   if(_this.curIndex === _this.$nodeLength){ //当滚到最后一张之后
-    //     _this.$nodeList.css({'left': -_this.$nodeWidth}); //回到第一张图片
-    //     _this.curIndex = 0;
-    //   }
       _this.tabChange();
     })
     this.isAnimate = false;

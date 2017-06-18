@@ -404,9 +404,9 @@
     height: 248px;
     z-index: -1;
 }
-/*.main-page > .live> .live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside >.slide >div >a >.mask{
-
-}*/
+.main-page > .live> .live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside >.slide >div{
+    width: 260px;
+}
 .main-page > .live> .live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside >.dot{
     position: absolute;
     display: flex;

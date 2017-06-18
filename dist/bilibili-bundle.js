@@ -10498,10 +10498,6 @@ tabSwitch.prototype.playPre = function (n) {
     left: '+=' + this.$nodeWidth * n //不相邻的图片距离
   }, function () {
     _this.curIndex -= n;
-    //   if(_this.curIndex < 0){ //当滚到第一张之前
-    //     _this.$nodeList.css({'left': -(_this.$nodeLength*_this.$nodeWidth)}); //回到最后一张图片
-    //     _this.curIndex = _this.$nodeLength - 1;
-    //   }
     _this.tabChange();
   });
   this.isAnimate = false;
@@ -10516,10 +10512,6 @@ tabSwitch.prototype.playNext = function (n) {
     left: '-=' + this.$nodeWidth * n //不相邻的图片距离
   }, function () {
     _this.curIndex += n;
-    //   if(_this.curIndex === _this.$nodeLength){ //当滚到最后一张之后
-    //     _this.$nodeList.css({'left': -_this.$nodeWidth}); //回到第一张图片
-    //     _this.curIndex = 0;
-    //   }
     _this.tabChange();
   });
   this.isAnimate = false;
@@ -10553,7 +10545,7 @@ var _TabSwitch = __webpack_require__(2);
 
 var $ = __webpack_require__(0);
 
-_Carousel.Carousel.init([$('.rec-carousel'), $('.bangumi >.bangumi-right >.carousel-inside')]);
+_Carousel.Carousel.init([$('.rec-carousel'), $('.live >.live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside'), $('.bangumi >.bangumi-right >.carousel-inside')]);
 
 _TabSwitch.TabSwitch.init([$('.live >.live-right'), $('.anime >.anime-right'), $('.music >.music-right'), $('.dance >.dance-right'), $('.game >.game-right'), $('.tech >.tech-right'), $('.life >.life-right'), $('.moive >.moive-right')]);
 

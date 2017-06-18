@@ -5,6 +5,7 @@ import {TabSwitch} from './src/js/TabSwitch'
 
 Carousel.init([
     $('.rec-carousel'),
+    $('.live >.live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside'),
     $('.bangumi >.bangumi-right >.carousel-inside')
 ]);
 
@@ -16,6 +17,6 @@ TabSwitch.init([
     $('.game >.game-right'),
     $('.tech >.tech-right'),
     $('.life >.life-right'),
-    $('.moive >.moive-right'),
+    $('.moive >.moive-right')
 ])
 
