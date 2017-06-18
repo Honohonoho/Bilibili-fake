@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10649,6 +10649,51 @@ var InfoCard = exports.InfoCard = function () {
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//header二级菜单
+var $ = __webpack_require__(0);
+
+function secNav($node) {
+    this.$node = $node;
+    this.init();
+    this.bind();
+}
+secNav.prototype.init = function () {
+    var $navItem = this.$navItem = this.$node.find('.nav >li');
+};
+secNav.prototype.bind = function () {
+    this.$navItem.on('mouseenter', function (e) {
+        var $secNav = $(e.currentTarget).find('ul');
+        $secNav.css({
+            'display': 'flex'
+        });
+    });
+    this.$navItem.on('mouseleave', function (e) {
+        var $secNav = $(e.currentTarget).find('ul');
+        $secNav.css({
+            'display': 'none'
+        });
+    });
+};
+var SecNav = exports.SecNav = function () {
+    return {
+        init: function init($itemList) {
+            $.each($itemList, function (index, node) {
+                new secNav($(node));
+            });
+        }
+    };
+}();
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 // 导航切换轮播
@@ -10734,7 +10779,7 @@ var TabSwitch = exports.TabSwitch = function () {
 }();
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10742,23 +10787,26 @@ var TabSwitch = exports.TabSwitch = function () {
 
 var _Carousel = __webpack_require__(1);
 
-var _TabSwitch = __webpack_require__(4);
+var _TabSwitch = __webpack_require__(5);
 
 var _HoverColorChange = __webpack_require__(2);
 
 var _Infocard = __webpack_require__(3);
 
+var _SecNav = __webpack_require__(4);
+
 var $ = __webpack_require__(0);
 
-_Carousel.Carousel.init([
-// $('.rec-carousel'),
-$('.live >.live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside'), $('.bangumi >.bangumi-right >.carousel-inside')]);
-
-_TabSwitch.TabSwitch.init([$('.live >.live-right'), $('.anime >.anime-right'), $('.music >.music-right'), $('.dance >.dance-right'), $('.game >.game-right'), $('.tech >.tech-right'), $('.life >.life-right'), $('.moive >.moive-right')]);
-
-_HoverColorChange.HoverColorChange.init([$('.header >.nav-guide >.guide-wrapper >ul >.square'), $('.push'), $('.live'), $('.anime'), $('.bangumi-schedule'), $('.bangumi'), $('.music'), $('.dance'), $('.game'), $('.tech'), $('.life'), $('.moive')]);
-
-_Infocard.InfoCard.init([$('.recommend >.rec-ct')]);
+// 滚动轮播
+_Carousel.Carousel.init([$('.rec-carousel'), $('.live >.live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside'), $('.bangumi >.bangumi-right >.carousel-inside')]);
+//导航切换轮播
+_TabSwitch.TabSwitch.init([$('.live >.live-right'), $('.anime >.anime-right'), $('.music >.music-right'), $('.dance >.dance-right'), $('.game >.game-right'), $('.tech >.tech-right'), $('.life >.life-right'), $('.moive >.moive-right')]
+//其他鼠标移入事件
+);_HoverColorChange.HoverColorChange.init([$('.header >.nav-guide >.guide-wrapper >ul >.square'), $('.push'), $('.live'), $('.anime'), $('.bangumi-schedule'), $('.bangumi'), $('.music'), $('.dance'), $('.game'), $('.tech'), $('.life'), $('.moive')]
+//视频鼠标移入事件
+);_Infocard.InfoCard.init([$('.recommend >.rec-ct')]
+//header二级菜单
+);_SecNav.SecNav.init([$('.header >.nav-guide >.guide-wrapper')]);
 
 /***/ })
 /******/ ]);

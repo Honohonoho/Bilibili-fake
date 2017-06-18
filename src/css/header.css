@@ -120,7 +120,7 @@ body {
     width: 340px;
     font-size: 12px;
 }
-.extra > .rank {
+.img-content >.extra > .rank {
     display: inline-block;
     width: 68px;
     height: 32px;
@@ -130,12 +130,16 @@ body {
     border-radius: 4px;
     background-color: rgba(255,255,255,0.88);
 }
-.extra > .rank > span {
+.img-content >.extra > .rank:hover{
+    background-color: #fff;
+    transition: all .2s;
+}
+.img-content >.extra > .rank > span {
     padding-left: 20px;
     background: url(../images/icons.png) -664px -663px no-repeat;
     color: #f25d8e;
 }
-.extra > .search {
+.img-content >.extra > .search {
     position: relative;
     display: inline-block;
     line-height: 32px;
@@ -144,7 +148,11 @@ body {
     background-color: rgba(255,255,255,0.88);
     border-radius: 4px;
 }
-.extra > .search > form > input {
+.img-content >.extra > .search:hover{
+    background-color: #fff;
+    transition: all .2s;
+}
+.img-content >.extra > .search > form > input {
     font-size: 12px;
     width: 200px;
     line-height: 32px;
@@ -155,7 +163,7 @@ body {
     border: none;
     outline: none;
 }
-.extra > .search > form > button {
+.img-content >.extra > .search > form > button {
     position: absolute;
     right: 0;
     width: 48px;
@@ -178,8 +186,52 @@ body {
 .nav-guide > .guide-wrapper > ul > li {
     float: left;
     display: block;
+    position: relative;
     font-size: 14px;
     height: 50px;
+}
+/*二级菜单*/
+.nav-guide > .guide-wrapper > ul > li >ul{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    overflow: hidden;
+    top: 48px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.16);
+
+}
+.nav-guide > .guide-wrapper > ul > li >ul >li{
+    font-size: 12px;
+    line-height: 20px;
+    min-width: 125px;
+    line-height: 20px;
+    height: auto;
+    overflow: hidden;
+    text-align: left;
+    transition: all .2s;
+    white-space: nowrap;
+}
+.nav-guide > .guide-wrapper > ul > li >ul >li:hover{
+    background-color: #e5e9ef;
+    padding-left: 3px;
+    transition: all .2s;
+}
+.nav-guide > .guide-wrapper > ul > li >ul >li >a{
+    display: block;
+    padding: 5px 15px 5px 5px;
+    margin-right: 10px;
+}
+.nav-guide > .guide-wrapper > ul > li >ul >li >a >.icon{
+    background-image: url(../images/icons2.png);
+    background-position: 9px -1615px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
 }
 .nav-guide > .guide-wrapper > ul > li >a {
     position: relative;
