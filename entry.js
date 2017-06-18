@@ -24,7 +24,7 @@ TabSwitch.init([
 ])
 //其他鼠标移入事件
 HoverColorChange.init([
-    $('.header >.nav-guide >.guide-wrapper >ul >.square'),
+    $('.header >.nav-guide >.guide-wrapper >ul'),
     $('.push'),
     $('.live'),
     $('.anime'),

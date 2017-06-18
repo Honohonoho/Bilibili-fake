@@ -10463,7 +10463,7 @@ hoverColorChange.prototype.init = function () {
         $aItem = this.$aItem = this.$node.find('.a-item'),
         $i = this.$i = this.$node.find('.info a'),
         $t = this.$t = this.$node.find('.toggle'),
-        $square = this.$square = this.$node.find('a');
+        $square = this.$square = this.$node.find('.square >a');
 };
 hoverColorChange.prototype.bind = function () {
     //header 广场 直播 小黑屋
@@ -10486,19 +10486,19 @@ hoverColorChange.prototype.bind = function () {
     this.$hot.on('mouseleave', function (e) {
         var $p = $(e.currentTarget).find('.a-hover');
         $p.css({ 'color': '#222' });
-    });
-
-    this.$i.on('mouseenter', function (e) {
-        var $p = $(e.currentTarget).find('.a-hover');
-        $p.css({
-            'color': '#00a1d6',
-            'transition': 'all .2s linear'
-        });
-    });
-    this.$i.on('mouseleave', function (e) {
-        var $p = $(e.currentTarget).find('.a-hover');
-        $p.css({ 'color': '#6d757a' });
     }
+
+    // this.$i.on('mouseenter',function(e){
+    //     var $p = $(e.currentTarget).find('.a-hover');
+    //     $p.css({
+    //         'color': '#00a1d6',
+    //         'transition': 'all .2s linear'
+    //     })
+    // })
+    // this.$i.on('mouseleave',function(e){
+    //     var $p = $(e.currentTarget).find('.a-hover');
+    //     $p.css({'color': '#6d757a'})
+    // })
     // 分区投稿视频
     );this.$item.on('mouseenter', function (e) {
         var $p = $(e.currentTarget).find('.a-hover');
@@ -10802,7 +10802,7 @@ _Carousel.Carousel.init([$('.rec-carousel'), $('.live >.live-right >.tab-item >.
 //导航切换轮播
 _TabSwitch.TabSwitch.init([$('.live >.live-right'), $('.anime >.anime-right'), $('.music >.music-right'), $('.dance >.dance-right'), $('.game >.game-right'), $('.tech >.tech-right'), $('.life >.life-right'), $('.moive >.moive-right')]
 //其他鼠标移入事件
-);_HoverColorChange.HoverColorChange.init([$('.header >.nav-guide >.guide-wrapper >ul >.square'), $('.push'), $('.live'), $('.anime'), $('.bangumi-schedule'), $('.bangumi'), $('.music'), $('.dance'), $('.game'), $('.tech'), $('.life'), $('.moive')]
+);_HoverColorChange.HoverColorChange.init([$('.header >.nav-guide >.guide-wrapper >ul'), $('.push'), $('.live'), $('.anime'), $('.bangumi-schedule'), $('.bangumi'), $('.music'), $('.dance'), $('.game'), $('.tech'), $('.life'), $('.moive')]
 //视频鼠标移入事件
 );_Infocard.InfoCard.init([$('.recommend >.rec-ct')]
 //header二级菜单

@@ -12,7 +12,7 @@ hoverColorChange.prototype.init = function(){
         $aItem = this.$aItem = this.$node.find('.a-item'),
         $i = this.$i = this.$node.find('.info a'),
         $t = this.$t = this.$node.find('.toggle'),
-        $square = this.$square = this.$node.find('a');
+        $square = this.$square = this.$node.find('.square >a');
 }
 hoverColorChange.prototype.bind = function(){
     //header 广场 直播 小黑屋
@@ -37,17 +37,17 @@ hoverColorChange.prototype.bind = function(){
         $p.css({'color': '#222'})
     })
 
-    this.$i.on('mouseenter',function(e){
-        var $p = $(e.currentTarget).find('.a-hover');
-        $p.css({
-            'color': '#00a1d6',
-            'transition': 'all .2s linear'
-        })
-    })
-    this.$i.on('mouseleave',function(e){
-        var $p = $(e.currentTarget).find('.a-hover');
-        $p.css({'color': '#6d757a'})
-    })
+    // this.$i.on('mouseenter',function(e){
+    //     var $p = $(e.currentTarget).find('.a-hover');
+    //     $p.css({
+    //         'color': '#00a1d6',
+    //         'transition': 'all .2s linear'
+    //     })
+    // })
+    // this.$i.on('mouseleave',function(e){
+    //     var $p = $(e.currentTarget).find('.a-hover');
+    //     $p.css({'color': '#6d757a'})
+    // })
     // 分区投稿视频
     this.$item.on('mouseenter',function(e){
         var $p = $(e.currentTarget).find('.a-hover');
