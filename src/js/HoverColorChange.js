@@ -11,9 +11,19 @@ hoverColorChange.prototype.init = function(){
         $item = this.$item = this.$node.find('.item'),
         $aItem = this.$aItem = this.$node.find('.a-item'),
         $i = this.$i = this.$node.find('.info a'),
-        $t = this.$t = this.$node.find('.toggle');
+        $t = this.$t = this.$node.find('.toggle'),
+        $square = this.$square = this.$node.find('a');
 }
 hoverColorChange.prototype.bind = function(){
+    //header 广场 直播 小黑屋
+    this.$square.on('mouseenter',function(e){
+        var $p = $(e.currentTarget).find('span');
+        $p.css({'color': '#00a1d6'})
+    })
+    this.$square.on('mouseleave',function(e){
+        var $p = $(e.currentTarget).find('span');
+        $p.css({'color': '#222'})
+    })
     //分区热点标题
     this.$hot.on('mouseenter',function(e){
         var $p = $(e.currentTarget).find('.a-hover');

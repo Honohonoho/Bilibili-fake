@@ -23,6 +23,7 @@ TabSwitch.init([
 ])
 
 HoverColorChange.init([
+    $('.header >.nav-guide >.guide-wrapper >ul >.square'),
     $('.push'),
     $('.live'),
     $('.anime'),

@@ -10462,11 +10462,21 @@ hoverColorChange.prototype.init = function () {
         $item = this.$item = this.$node.find('.item'),
         $aItem = this.$aItem = this.$node.find('.a-item'),
         $i = this.$i = this.$node.find('.info a'),
-        $t = this.$t = this.$node.find('.toggle');
+        $t = this.$t = this.$node.find('.toggle'),
+        $square = this.$square = this.$node.find('a');
 };
 hoverColorChange.prototype.bind = function () {
+    //header 广场 直播 小黑屋
+    this.$square.on('mouseenter', function (e) {
+        var $p = $(e.currentTarget).find('span');
+        $p.css({ 'color': '#00a1d6' });
+    });
+    this.$square.on('mouseleave', function (e) {
+        var $p = $(e.currentTarget).find('span');
+        $p.css({ 'color': '#222' });
+    }
     //分区热点标题
-    this.$hot.on('mouseenter', function (e) {
+    );this.$hot.on('mouseenter', function (e) {
         var $p = $(e.currentTarget).find('.a-hover');
         $p.css({
             'color': '#00a1d6',
@@ -10746,7 +10756,7 @@ $('.live >.live-right >.tab-item >.carousel-outside >.recommend >.carousel-insid
 
 _TabSwitch.TabSwitch.init([$('.live >.live-right'), $('.anime >.anime-right'), $('.music >.music-right'), $('.dance >.dance-right'), $('.game >.game-right'), $('.tech >.tech-right'), $('.life >.life-right'), $('.moive >.moive-right')]);
 
-_HoverColorChange.HoverColorChange.init([$('.push'), $('.live'), $('.anime'), $('.bangumi-schedule'), $('.bangumi'), $('.music'), $('.dance'), $('.game'), $('.tech'), $('.life'), $('.moive')]);
+_HoverColorChange.HoverColorChange.init([$('.header >.nav-guide >.guide-wrapper >ul >.square'), $('.push'), $('.live'), $('.anime'), $('.bangumi-schedule'), $('.bangumi'), $('.music'), $('.dance'), $('.game'), $('.tech'), $('.life'), $('.moive')]);
 
 _Infocard.InfoCard.init([$('.recommend >.rec-ct')]);
 
