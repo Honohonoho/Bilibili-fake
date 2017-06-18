@@ -5,6 +5,7 @@ import {TabSwitch} from './src/js/TabSwitch'
 import {HoverColorChange} from './src/js/HoverColorChange'
 import {InfoCard} from './src/js/Infocard'
 import {SecNav} from './src/js/SecNav'
+import {TabChange} from './src/js/TabChange'
 // 滚动轮播
 Carousel.init([
     $('.rec-carousel'),
@@ -43,5 +44,7 @@ InfoCard.init([$('.recommend >.rec-ct')])
 SecNav.init([
     $('.header >.nav-guide >.guide-wrapper')
 ])
+//番剧更新表 tab切换
+TabChange.init([$('.bangumi-schedule >.tab-change')])
 
 

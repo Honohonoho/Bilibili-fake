@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10696,6 +10696,54 @@ var SecNav = exports.SecNav = function () {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+//番剧更新表 tab切换
+var $ = __webpack_require__(0);
+
+function tabChange($ct) {
+  this.$ct = $ct;
+  this.init();
+  this.bind();
+}
+
+tabChange.prototype.init = function () {
+  //初始化函数
+  var $tabList = this.$tabList = this.$ct.find('.bangumi-title >.item >.w-item'),
+      $item = this.$item = this.$ct.find('.schedule >.sch-item');
+};
+
+tabChange.prototype.bind = function () {
+  var _this = this;
+  this.$tabList.on('click', function () {
+    var index = $(this).index();
+    _this.$tabList.siblings().removeClass('on').eq(index).addClass('on');
+    _this.showItem(index);
+  });
+};
+
+tabChange.prototype.showItem = function (index) {
+  this.$item.siblings().removeClass('on').eq(index).addClass('on');
+};
+
+var TabChange = exports.TabChange = function () {
+  return {
+    init: function init($nodeList) {
+      $.each($nodeList, function (index, node) {
+        new tabChange($(node));
+      });
+    }
+  };
+}();
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 // 导航切换轮播
 var $ = __webpack_require__(0);
 
@@ -10779,7 +10827,7 @@ var TabSwitch = exports.TabSwitch = function () {
 }();
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10787,13 +10835,15 @@ var TabSwitch = exports.TabSwitch = function () {
 
 var _Carousel = __webpack_require__(1);
 
-var _TabSwitch = __webpack_require__(5);
+var _TabSwitch = __webpack_require__(6);
 
 var _HoverColorChange = __webpack_require__(2);
 
 var _Infocard = __webpack_require__(3);
 
 var _SecNav = __webpack_require__(4);
+
+var _TabChange = __webpack_require__(5);
 
 var $ = __webpack_require__(0);
 
@@ -10806,7 +10856,9 @@ _TabSwitch.TabSwitch.init([$('.live >.live-right'), $('.anime >.anime-right'), $
 //视频鼠标移入事件
 );_Infocard.InfoCard.init([$('.recommend >.rec-ct')]
 //header二级菜单
-);_SecNav.SecNav.init([$('.header >.nav-guide >.guide-wrapper')]);
+);_SecNav.SecNav.init([$('.header >.nav-guide >.guide-wrapper')]
+//番剧更新表 tab切换
+);_TabChange.TabChange.init([$('.bangumi-schedule >.tab-change')]);
 
 /***/ })
 /******/ ]);
