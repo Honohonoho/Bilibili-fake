@@ -1,6 +1,5 @@
-
+// 滚动轮播
 const $ = require('jquery')
-
 
 function carousel($ct){
   this.$ct = $ct;

@@ -18,7 +18,6 @@ function tabSwitch($ct){
         $nodeList.width($firstNode.width() * $nodeLength);//容器宽度自适应
         this.curIndex = 1;
         this.isAnimate = false;
-        console.log(this.$ct.hasClass('live-right'))
         if(this.$ct.hasClass('live-right')){
             this.curIndex = 2;
             $nodeList.css({'left': -($nodeWidth * ($nodeLength-1) )});

@@ -2,6 +2,7 @@ const $ = require('jquery')
 
 import {Carousel} from './src/js/Carousel'
 import {TabSwitch} from './src/js/TabSwitch'
+import {HoverColorChange} from './src/js/HoverColorChange'
 
 Carousel.init([
     $('.rec-carousel'),
@@ -19,4 +20,19 @@ TabSwitch.init([
     $('.life >.life-right'),
     $('.moive >.moive-right')
 ])
+
+HoverColorChange.init([
+    $('.push'),
+    $('.live'),
+    $('.anime'),
+    $('.bangumi-schedule'),
+    $('.bangumi'),
+    $('.music'),
+    $('.dance'),
+    $('.game'),
+    $('.tech'),
+    $('.life'),
+    $('.moive')
+])
+
 
