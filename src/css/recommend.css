@@ -4,26 +4,26 @@
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.main-page > .recommend > .carousel {
+.main-page > .recommend > .rec-carousel {
     position: relative;
     width: 440px;
     height: 220px;
     overflow: hidden;
     border-radius: 4px;
 }
-.main-page > .recommend > .carousel >.slide {
+.main-page > .recommend > .rec-carousel >.slide {
     display: flex;
     position: absolute;
     justify-content: flex-start;
 }
-.main-page > .recommend > .carousel > .dot {
+.main-page > .recommend > .rec-carousel > .dot {
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 6px;
     right: 20px;
 }
-.main-page > .recommend > .carousel > .dot >li {
+.main-page > .recommend > .rec-carousel > .dot >li {
     width: 18px;
     height: 18px;
     margin-left: 8px;
@@ -31,7 +31,7 @@
     background: #fff;
     cursor: pointer;
 }
-.main-page > .recommend > .carousel > .dot >.active {
+.main-page > .recommend > .rec-carousel > .dot >.active {
     background: red;
 }
 .main-page > .recommend > .rec-ct {

@@ -1,23 +1,21 @@
 const path = require('path')
 
 module.exports = {
-    entry: 'entry.js',
+    entry: './entry.js',
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'bilibili-bundle.js'
     },
     module: {
-    rules: [
+        loaders:[
       {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
-      }
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+            presets: ['es2015']
+        }
+      },
     ]
-  },
-  plugins: [
-    new ExtractTextPlugin("styles.css"),
-  ]
+    }
 }

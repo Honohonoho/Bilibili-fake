@@ -349,16 +349,6 @@
     border-left-color: transparent;
     border-right-color: transparent;
 }
-/*.main-page > .bangumi> .bangumi-left >.bangumi-title >.icon{
-    background-image: url(./icons3.png);
-    background-position: -141px -649px;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    vertical-align: middle;
-    margin-top: -10px;
-}*/
 .main-page > .bangumi> .bangumi-left >.bangumi-title >.name{
     font-size: 24px!important;
     line-height: 24px;
@@ -563,6 +553,7 @@
 }
 .main-page > .bangumi >.bangumi-right >.carousel-inside{
     height: 268px;
+    width: 260px;
     position: relative;
 }
 .main-page > .bangumi >.bangumi-right >.carousel-inside >.slide{
@@ -571,6 +562,9 @@
     justify-content: flex-start;
     height: 268px;
     z-index: -1;
+}
+.main-page > .bangumi >.bangumi-right >.carousel-inside >.slide >div{
+    width: 260px;
 }
 /*.main-page > .bangumi >.bangumi-right >.carousel-inside >.slide >div >a >.mask{
 
