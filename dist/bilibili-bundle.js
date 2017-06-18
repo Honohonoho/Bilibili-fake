@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10578,6 +10578,67 @@ var HoverColorChange = exports.HoverColorChange = function () {
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+// 鼠标移入展示视频信息
+var $ = __webpack_require__(0);
+
+function infoCard($node) {
+    this.$node = $node;
+    this.init();
+    this.bind();
+}
+infoCard.prototype.init = function () {
+    var $itemList = this.$itemList = this.$node.find('.rec-item');
+};
+infoCard.prototype.bind = function () {
+    //分区热点标题
+    this.$itemList.on('mouseenter', function (e) {
+        var $item = $(e.currentTarget).find('.info-card'),
+            $text = $(e.currentTarget).find('.info');
+        $item.css({
+            'top': '0',
+            'overflow': 'visible',
+            'height': '100%',
+            'background': 'rgba(0,0,0,.8)'
+        });
+        $text.css({
+            'opacity': '1',
+            'transition': 'opacity .5s linear'
+        });
+    });
+    this.$itemList.on('mouseleave', function (e) {
+        var $item = $(e.currentTarget).find('.info-card'),
+            $text = $(e.currentTarget).find('.info');
+        $item.css({
+            'top': '68px',
+            'height': '40px',
+            'overflow': 'hidden',
+            'background': 'linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.6) 65%,rgba(0,0,0,.9))'
+        });
+        $text.css({
+            'opacity': '0'
+        });
+    });
+};
+var InfoCard = exports.InfoCard = function () {
+    return {
+        init: function init($itemList) {
+            $.each($itemList, function (index, node) {
+                new infoCard($(node));
+            });
+        }
+    };
+}();
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 // 导航切换轮播
@@ -10663,7 +10724,7 @@ var TabSwitch = exports.TabSwitch = function () {
 }();
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10671,17 +10732,23 @@ var TabSwitch = exports.TabSwitch = function () {
 
 var _Carousel = __webpack_require__(1);
 
-var _TabSwitch = __webpack_require__(3);
+var _TabSwitch = __webpack_require__(4);
 
 var _HoverColorChange = __webpack_require__(2);
 
+var _Infocard = __webpack_require__(3);
+
 var $ = __webpack_require__(0);
 
-_Carousel.Carousel.init([$('.rec-carousel'), $('.live >.live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside'), $('.bangumi >.bangumi-right >.carousel-inside')]);
+_Carousel.Carousel.init([
+// $('.rec-carousel'),
+$('.live >.live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside'), $('.bangumi >.bangumi-right >.carousel-inside')]);
 
 _TabSwitch.TabSwitch.init([$('.live >.live-right'), $('.anime >.anime-right'), $('.music >.music-right'), $('.dance >.dance-right'), $('.game >.game-right'), $('.tech >.tech-right'), $('.life >.life-right'), $('.moive >.moive-right')]);
 
 _HoverColorChange.HoverColorChange.init([$('.push'), $('.live'), $('.anime'), $('.bangumi-schedule'), $('.bangumi'), $('.music'), $('.dance'), $('.game'), $('.tech'), $('.life'), $('.moive')]);
+
+_Infocard.InfoCard.init([$('.recommend >.rec-ct')]);
 
 /***/ })
 /******/ ]);

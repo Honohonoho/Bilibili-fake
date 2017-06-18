@@ -16,23 +16,41 @@
     position: absolute;
     justify-content: flex-start;
 }
+.main-page > .recommend > .rec-carousel >.slide >div{
+    width: 440px;
+    height: 220px;
+}
 .main-page > .recommend > .rec-carousel > .dot {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     position: absolute;
-    bottom: 6px;
+    width: 130px;
+    height: 20px;
+    bottom: 0;
     right: 20px;
 }
 .main-page > .recommend > .rec-carousel > .dot >li {
-    width: 18px;
-    height: 18px;
+    width: 10px;
+    height: 10px;
     margin-left: 8px;
     border-radius: 10px;
     background: #fff;
     cursor: pointer;
 }
-.main-page > .recommend > .rec-carousel > .dot >.active {
-    background: red;
+.main-page > .recommend > .rec-carousel > .dot >li:not(.active):hover {
+    background: #00a1d6;
+    border: 2px solid #fff;
+}
+.main-page > .recommend > .rec-carousel > .dot >.active >span{
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    bottom: 4px;
+    right: 4px;
+    background-image: url(../images/icons3.png);
+    background-position: -855px -727px;
 }
 .main-page > .recommend > .rec-ct {
     display: flex;
@@ -50,17 +68,29 @@
     border-radius: 4px;
     overflow: hidden;
 }
-.main-page > .recommend > .rec-ct > .rec-item >.info-card {
+.main-page > .recommend > .rec-ct > .rec-item >a >.info-card {
     position: absolute;
     top: 68px;
-    width: 150px;
+    width: 160px;
     padding: 10px 5px;
     height: 40px;
     line-height: 20px;
     overflow: hidden;
+    background: linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.6) 65%,rgba(0,0,0,.9));
 }
-.main-page > .recommend > .rec-ct > .rec-item >.info-card >p{
-    overflow: hidden;
+.main-page > .recommend > .rec-ct > .rec-item >a >.info-card >.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 40px;
+    opacity: 0;
+}
+.main-page > .recommend > .rec-ct > .rec-item >a >.info-card >p{
+    color: #99a2aa;
+}
+.main-page > .recommend > .rec-ct > .rec-item >a >.info-card >p:nth-child(1){
     color: #fff;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 5px;
 }

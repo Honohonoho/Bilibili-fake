@@ -3,9 +3,10 @@ const $ = require('jquery')
 import {Carousel} from './src/js/Carousel'
 import {TabSwitch} from './src/js/TabSwitch'
 import {HoverColorChange} from './src/js/HoverColorChange'
+import {InfoCard} from './src/js/Infocard'
 
 Carousel.init([
-    $('.rec-carousel'),
+    // $('.rec-carousel'),
     $('.live >.live-right >.tab-item >.carousel-outside >.recommend >.carousel-inside'),
     $('.bangumi >.bangumi-right >.carousel-inside')
 ]);
@@ -34,5 +35,7 @@ HoverColorChange.init([
     $('.life'),
     $('.moive')
 ])
+
+InfoCard.init([$('.recommend >.rec-ct')])
 
 
