@@ -32,6 +32,4 @@ css和js目录
 
 [在线预览](https://honohonoho.github.io/Bilibili-fake/)   
 
-那个，觉得看着顺眼的，就给个star吧，小弟在此谢过了（逃~）
-
-李祺 ---2017年6月
+那啥，觉得看着顺眼的，就给个star吧，小弟在此谢过了（逃~）
